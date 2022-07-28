@@ -1,0 +1,201 @@
+html,
+body {
+  height: 100%;
+}
+
+.login-wrapper,
+.login-intro {
+  position: relative;
+}
+
+@media (max-width: 961px) {
+  .login-wrapper {
+    .login-intro {
+      display: none;
+    }
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.login-form {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  @media (min-width: 961px) {
+    width: 50%;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    img {
+      width: 180px;
+      @media (max-width: 768px) {
+        width: 50%;
+      }
+    }
+  }
+  .box {
+    padding: 0 25px;
+    max-width: 380px;
+    margin-top: 130px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .btn-primary {
+    padding: 14px 25px;
+    &.btn:focus {
+      color: #fff;
+      background-color: #2e968e !important;
+      border-color: #2e968e !important;
+      outline: 0;
+      box-shadow: none !important;
+    }
+  }
+  .login-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ------------------- Login Fields -----------------------*/
+fieldset {
+  position: absolute;
+  width: 86%;
+  left: 25px;
+  transition: all 0.3s ease;
+}
+.user-field {
+  background: #f2f2f2 url("../img/user-icon.svg") no-repeat 13px center;
+  padding-left: 46px;
+  background-size: 19px;
+  height: 50px;
+  &.form-control:focus {
+    color: #212529;
+    background-color: #f2f2f2;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+.password-field {
+  background: #f2f2f2 url("../img/lock-icon.svg") no-repeat 13px center;
+  padding-left: 46px;
+  background-size: 21px;
+  height: 50px;
+  &.form-control:focus {
+    color: #212529;
+    background-color: #f2f2f2;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.login-intro {
+  background: #2e968e;
+  width: 50%;
+  position: relative;
+  .box {
+    max-width: 450px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 130px;
+  }
+}
+
+.confirmation-request {
+  h2 {
+    font-size: 24px;
+  }
+}
+/* ------------------- Recover Password -------------------*/
+.recover-password {
+  position: absolute;
+  left: 385px;
+  width: 86%;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  h2 {
+    font-size: 18px;
+  }
+  .go-back {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 6px;
+    margin-top: 7px;
+  }
+  input[type="email"] {
+    background: #f2f2f2 url("../img/mail-icon.svg") no-repeat 13px center;
+    padding-left: 46px;
+    background-size: 24px;
+    height: 50px;
+  }
+}
+
+.box.recover-pass-active {
+  .recover-password {
+    position: absolute;
+    left: 25px;
+    width: 86%;
+    opacity: 1;
+  }
+  fieldset {
+    left: -310px;
+    opacity: 0;
+  }
+}
+/* ------------------- Login Intro --------------------------*/
+
+.login-intro {
+  .box {
+    margin-top: 147px;
+    .business-pic {
+      @media (max-width: 1200px) {
+        width: 265px;
+        /* margin-bottom: 44px; */
+        margin-top: 43px;
+      }
+      width: 330px;
+      margin-top: 0;
+    }
+  }
+  h3 {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  .top-shapes {
+    text-align: right;
+  }
+  .down-shapes {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.confirmation-image {
+  text-align: center;
+  margin-top: 50px;
+  img {
+    width: 230px;
+    margin-bottom: 10px;
+  }
+}
